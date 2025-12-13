@@ -66,7 +66,7 @@ Java_Project/
 ├── Student.java           # Entity class - Represents student data model
 ├── StudentDAO.java        # Data Access Object - Database query logic
 ├── DBConnection.java      # Connection manager - Handles MySQL connectivity
-├── mysql-connector.jar    # MySQL JDBC driver (external dependency)
+├── mysql.jar              # MySQL JDBC driver (external dependency)
 └── README.md              # Project documentation
 ```
 
@@ -138,7 +138,7 @@ student_id | name          | email              | cpi  | backlogs
   - Download from: [MySQL Downloads](https://dev.mysql.com/downloads/mysql/)
   - Ensure MySQL service is running
 
-- **MySQL Connector/J**: JDBC driver (included as `mysql-connector.jar`)
+- **MySQL Connector/J**: JDBC driver (included as `mysql.jar`)
 
 ### Step 1: Database Setup
 
@@ -277,5 +277,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **⭐ If you find this project helpful, please consider giving it a star!**
+
 
 
