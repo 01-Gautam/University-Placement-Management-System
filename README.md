@@ -187,23 +187,23 @@ private static final String PASSWORD = "your_password";  // Update with your MyS
 Navigate to the project directory and compile all Java files:
 
 ```bash
-javac -cp ".;mysql-connector.jar" *.java
+javac -cp ".;mysql.jar" *.java
 ```
 
 **For Linux/Mac users**, use colon (`:`) instead of semicolon (`;`):
 ```bash
-javac -cp ".:mysql-connector.jar" *.java
+javac -cp ".:mysql.jar" *.java
 ```
 
 ### Step 4: Run the Application
 
 ```bash
-java -cp ".;mysql-connector.jar" Main
+java -cp ".;mysql.jar" Main
 ```
 
 **For Linux/Mac users**:
 ```bash
-java -cp ".:mysql-connector.jar" Main
+java -cp ".:mysql.jar" Main
 ```
 
 ---
