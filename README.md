@@ -147,30 +147,17 @@ student_id | name          | email              | cpi  | backlogs
    mysql -u root -p
    ```
 
-2. **Create the database and table**:
-   ```sql
-   CREATE DATABASE university_placement;
-   
-   USE university_placement;
-   
-   CREATE TABLE Student_Master (
-       student_id INT PRIMARY KEY AUTO_INCREMENT,
-       name VARCHAR(100) NOT NULL,
-       email VARCHAR(100) UNIQUE NOT NULL,
-       cpi DECIMAL(4,2) NOT NULL,
-       backlogs INT NOT NULL DEFAULT 0
-   );
+2. **Execute the Setup Script**: Run the `database_setup.sql` script located in this repository:
+   ```bash
+   mysql -u root -p < database_setup.sql
    ```
-
-3. **(Optional) Populate test data**:
-   - Run the provided `database_setup.sql` script to generate 500+ student records for stress testing
-   - Or insert sample data manually:
+   
+   Alternatively, if already logged into MySQL:
    ```sql
-   INSERT INTO Student_Master (name, email, cpi, backlogs) VALUES
-   ('John Doe', 'john@university.edu', 8.50, 0),
-   ('Jane Smith', 'jane@university.edu', 7.25, 1),
-   ('Bob Johnson', 'bob@university.edu', 9.00, 0);
+   source database_setup.sql;
    ```
+   
+   > **Note**: This script will create the database, tables, and automatically generate **500+ test student records** for system validation.
 
 ### Step 2: Configure Database Connection
 
@@ -178,7 +165,7 @@ student_id | name          | email              | cpi  | backlogs
 
 ```java
 private static final String URL = "jdbc:mysql://localhost:3306/university_placement";
-private static final String USER = "root";  // Change if needed
+private static final String USER = "root";
 private static final String PASSWORD = "your_password";  // Update with your MySQL password
 ```
 
@@ -290,4 +277,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **⭐ If you find this project helpful, please consider giving it a star!**
+
 
