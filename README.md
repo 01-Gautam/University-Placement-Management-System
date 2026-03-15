@@ -270,12 +270,6 @@ Built with ❤️ for efficient campus recruitment management.
 
 ---
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 **⭐ If you find this project helpful, please consider giving it a star!**
 
 
